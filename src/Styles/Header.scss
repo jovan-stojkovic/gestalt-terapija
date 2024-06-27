@@ -1,0 +1,148 @@
+@import "./App.scss";
+
+header {
+  height: 50px;
+  font-family: $sarabun;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  .header-cont {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo-link {
+      height: 40px;
+      width: 40px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    nav {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+
+      .navlink {
+        text-decoration: none;
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: $chocolate-brown;
+        font-weight: 600;
+        padding: 5px 10px;
+        transition: background-color 0.2s, color 0.2s;
+        border-radius: 2px;
+
+        &:hover {
+          background-color: $beige-gold;
+          color: black;
+        }
+
+        &.active {
+          color: $olive-green;
+          background-color: $chocolate-brown;
+          color: white;
+        }
+      }
+
+      .what-is-navlink {
+        position: relative;
+
+        .what-is {
+          position: absolute;
+          width: max-content;
+          left: -20px;
+          height: 0;
+          overflow: hidden;
+          padding-top: 0px;
+
+          .what-is-cont {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+            background-color: hsla(36, 62%, 69%, 0.2);
+            backdrop-filter: blur(3px);
+            border-radius: 3px;
+            padding: 0 20px;
+          }
+
+          &.show {
+            transition: height 0.5s;
+            height: 200px;
+            padding-top: 20px;
+
+            .what-is-cont {
+              padding: 20px 20px;
+            }
+          }
+        }
+      }
+
+      .popular-navlink {
+        position: relative;
+
+        .popular {
+          position: absolute;
+          width: max-content;
+          left: -20px;
+          height: 0;
+          overflow: hidden;
+          padding-top: 0px;
+
+          .popular-cont {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+            background-color: hsla(36, 62%, 69%, 0.2);
+            backdrop-filter: blur(3px);
+            border-radius: 3px;
+            padding: 0 20px;
+          }
+
+          &.show {
+            transition: height 0.5s;
+            height: 150px;
+            padding-top: 20px;
+
+            .popular-cont {
+              padding: 20px 20px;
+            }
+          }
+        }
+      }
+
+      .insta-link {
+        all: unset;
+        height: 20px;
+        width: 20px;
+        background-image: url("/icons/instagram.svg");
+        background-size: cover;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+
+      .language-btn {
+        all: unset;
+        cursor: pointer;
+        height: 20px;
+        width: 30px;
+        margin-left: 10px;
+
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
