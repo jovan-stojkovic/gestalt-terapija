@@ -59,38 +59,13 @@ header {
           background-color: $chocolate-brown;
           color: white;
         }
-      }
 
-      .what-is-navlink {
-        position: relative;
-
-        .what-is {
-          position: absolute;
-          width: max-content;
-          left: -20px;
-          height: 0;
-          overflow: hidden;
-          padding-top: 0px;
-
-          .what-is-cont {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 3px;
-            padding: 0 20px;
-          }
-
-          &.show {
-            transition: height 0.5s;
-            height: 200px;
-            padding-top: 20px;
-
-            .what-is-cont {
-              padding: 20px 20px;
-            }
-          }
+        &.navlink-popular {
+          padding-right: 15px;
+          background-image: url("/icons/arrow.svg");
+          background-position: right;
+          background-size: 15px;
+          background-repeat: no-repeat;
         }
       }
 

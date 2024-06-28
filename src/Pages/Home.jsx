@@ -1,6 +1,6 @@
 import "../Styles/Home.scss";
 import { Link } from "react-router-dom";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const generalMotion = {
@@ -11,7 +11,7 @@ const Home = () => {
       opacity: 1,
       transition: {
         duration: 0.1,
-        delayChildren: 0.1,
+        delayChildren: 0.5,
         staggerChildren: 0.1,
       },
     },

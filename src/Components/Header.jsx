@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   const [language, setLanguage] = useState("srb");
-  const [showHiddenWhat, setShowHiddenWhat] = useState("hide");
   const [showHiddenPopular, setShowHiddenPopular] = useState("hide");
 
   const srbFlag = "/flags/SRB.png";
@@ -60,37 +59,10 @@ const Header = () => {
             </NavLink>
           </motion.div>
 
-          <motion.div
-            className="what-is-navlink"
-            variants={navlinksMotion}
-            onMouseEnter={() => setShowHiddenWhat("show")}
-            onMouseLeave={() => setShowHiddenWhat("hide")}
-          >
+          <motion.div variants={navlinksMotion}>
             <NavLink className="navlink" to="/sta-je-psihoterapija">
               ŠTA JE PSIHOTERAPIJA?
             </NavLink>
-            <div className={`what-is ${showHiddenWhat}`}>
-              <div className="what-is-cont">
-                <NavLink
-                  className="navlink"
-                  to="/sta-je-psihoterapija/gestalt-psihoterapija"
-                >
-                  GEŠTALT PSIHOTERAPIJA
-                </NavLink>
-                <NavLink
-                  className="navlink"
-                  to="/sta-je-psihoterapija/kada-na-psihoterapiju"
-                >
-                  KADA NA PSIHOTERAPIJU?
-                </NavLink>
-                <NavLink
-                  className="navlink"
-                  to="/sta-je-psihoterapija/utisci-klijenata"
-                >
-                  UTISCI KLIJENATA
-                </NavLink>
-              </div>
-            </div>
           </motion.div>
 
           <motion.div variants={navlinksMotion}>
@@ -104,7 +76,7 @@ const Header = () => {
             onMouseEnter={() => setShowHiddenPopular("show")}
             onMouseLeave={() => setShowHiddenPopular("hide")}
           >
-            <NavLink className="navlink" to="/aktuelno">
+            <NavLink className="navlink navlink-popular" to="/aktuelno">
               AKTUELNO
             </NavLink>
             <div className={`popular ${showHiddenPopular}`}>
