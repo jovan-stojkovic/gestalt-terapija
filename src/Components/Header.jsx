@@ -29,7 +29,7 @@ const Header = () => {
 
   const navlinksMotion = {
     hidden: {
-      x: 300,
+      x: 100,
       opacity: 0,
     },
     visible: {
@@ -55,14 +55,8 @@ const Header = () => {
         </Link>
         <motion.nav variants={generalMotion} initial="hidden" animate="visible">
           <motion.div variants={navlinksMotion}>
-            <NavLink className="navlink" to="/pocetna">
+            <NavLink className="navlink" to="/">
               POČETNA
-            </NavLink>
-          </motion.div>
-
-          <motion.div variants={navlinksMotion}>
-            <NavLink className="navlink" to="/usluge">
-              USLUGE
             </NavLink>
           </motion.div>
 
