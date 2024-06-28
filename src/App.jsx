@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import What from "./Pages/What";
 import Biography from "./Pages/Biography";
+import Contact from "./Pages/Contact";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/sta-je-psihoterapija" element={<What />} />
           <Route path="/biografija" element={<Biography />} />
+          <Route path="/kontakt" element={<Contact />} />
         </Routes>
       </main>
     </>
