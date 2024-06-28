@@ -76,7 +76,7 @@ const Header = () => {
             onMouseEnter={() => setShowHiddenPopular("show")}
             onMouseLeave={() => setShowHiddenPopular("hide")}
           >
-            <NavLink className="navlink navlink-popular" to="/aktuelno">
+            <NavLink className="navlink" to="/aktuelno">
               AKTUELNO
             </NavLink>
             <div className={`popular ${showHiddenPopular}`}>

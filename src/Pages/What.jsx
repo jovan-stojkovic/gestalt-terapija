@@ -41,7 +41,7 @@ const What = () => {
       opacity: 1,
       x: 0,
       transition: {
-        delay: 0.3,
+        delay: 0.2,
         duration: 0.3,
         type: "spring",
         stiffness: 100,
@@ -117,7 +117,7 @@ const What = () => {
           variants={sectionMotion}
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.8, once: true }}
+          viewport={{ amount: 0.5, once: true }}
         >
           <h2>Geštalt psihoterapija</h2>
           <div className="section-cont">
