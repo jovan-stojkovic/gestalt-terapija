@@ -7,6 +7,7 @@ import What from "./Pages/What";
 import Biography from "./Pages/Biography";
 import Contact from "./Pages/Contact";
 import Popular from "./Pages/Popular";
+import BlogOne from "./Blogs/BlogOne";
 
 const App = () => {
   return (
@@ -19,6 +20,11 @@ const App = () => {
           <Route path="/biografija" element={<Biography />} />
           <Route path="/kontakt" element={<Contact />} />
           <Route path="/aktuelno" element={<Popular />} />
+          //blogs
+          <Route
+            path="/aktuelno/antipanik-blog/vanredno-stanje-iz-ugla-psihologa"
+            element={<BlogOne />}
+          />
         </Routes>
         <Footer />
       </main>
