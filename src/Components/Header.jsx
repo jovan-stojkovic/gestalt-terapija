@@ -85,6 +85,7 @@ const Header = () => {
           </motion.div>
 
           <Link target="_blank" className="insta-link" to={insta}></Link>
+          <Link target="_blank" className="linkedin-link" to="linkedin.com"></Link>
           <button
             className={`language-btn ${language}`}
             onClick={() => setLanguage(language === "srb" ? "eng" : "srb")}

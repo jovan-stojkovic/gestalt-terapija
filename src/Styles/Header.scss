@@ -77,6 +77,22 @@ header {
         }
       }
 
+      .linkedin-link {
+        all: unset;
+        height: 16px;
+        width: 16px;
+        background-image: url("/icons/linkedin.svg");
+        background-size: cover;
+        cursor: pointer;
+        margin-left: 10px;
+        filter: grayscale(0.8);
+        transition: filter 0.2s;
+
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
+
       .language-btn {
         all: unset;
         cursor: pointer;
