@@ -1,0 +1,57 @@
+@import "./App.scss";
+
+footer {
+  height: 150px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: $beige-gold;
+
+  .footer-cont {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    .left {
+      height: 80%;
+      width: 20%;
+      background-image: url("/icons/logo.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .right {
+      font-family: $dosis;
+      letter-spacing: 1px;
+      line-height: 30px;
+
+      h3 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 17px;
+      }
+      a {
+        all: unset;
+        font-size: 17px;
+        cursor: pointer;
+        display: inline-block;
+        background-image: linear-gradient($chocolate-brown 0 0);
+        background-position: 0 100%;
+        background-size: 0% 2px;
+        background-repeat: no-repeat;
+        transition: background-size 0.2s, background-position 0s 0.2s;
+  
+        &:hover {
+          background-position: 100% 100%;
+          background-size: 100% 3px;
+        }
+      }
+    }
+  }
+}

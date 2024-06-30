@@ -46,11 +46,7 @@ const Header = () => {
     <header>
       <div className="header-cont">
         <Link className="logo-link" to="/">
-          <img
-            src="https://www.iconbolt.com/iconsets/77-essential-icons/book.svg"
-            alt="logo"
-            className="logo"
-          />
+          <img src="/icons/logo.svg" alt="logo" className="logo" />
         </Link>
         <motion.nav variants={generalMotion} initial="hidden" animate="visible">
           <motion.div variants={navlinksMotion}>

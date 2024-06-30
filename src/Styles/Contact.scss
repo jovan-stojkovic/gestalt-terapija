@@ -1,7 +1,7 @@
 @import "./App.scss";
 
 .page.contact {
-  height: 100vh;
+  min-height: 100vh;
   margin-top: -50px;
 
   .head {
@@ -46,6 +46,10 @@
       color: $chocolate-brown;
       text-align: justify;
       margin-bottom: 20px;
+
+      span {
+        font-weight: 600;
+      }
     }
 
     .contact-flex {
@@ -61,61 +65,63 @@
       width: 250px;
       background-size: contain;
     }
+
+    .right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    
+      .cont-part {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        width: 100%;
+        gap: 10px;
+    
+        .img {
+          height: 50px;
+          width: 50px;
+          background-image: url("/icons/phone.svg");
+          background-size: 40px;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+    
+        .contact-p {
+            font-family: $dosis;
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-weight: 500;
+        }
+    
+        &:nth-child(2) {
+            .img {
+                height: 50px;
+                width: 50px;
+                background-image: url("/icons/mail.svg");
+              }  
+        }
+    
+        &:nth-child(3) {
+            .img {
+                height: 50px;
+                width: 50px;
+                background-image: url("/icons/location.svg");
+              }  
+        }
+    
+        &:nth-child(4) {
+            .img {
+                height: 50px;
+                width: 50px;
+                background-image: url("/icons/time.svg");
+              }  
+        }
+      }
+    }
   }
 }
 
-.right {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
 
-  .cont-part {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
-    width: 100%;
-    gap: 10px;
-
-    .img {
-      height: 50px;
-      width: 50px;
-      background-image: url("/icons/phone.svg");
-      background-size: 40px;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .contact-p {
-        font-family: $dosis;
-        font-size: 14px;
-        letter-spacing: 2px;
-        font-weight: 500;
-    }
-
-    &:nth-child(2) {
-        .img {
-            height: 50px;
-            width: 50px;
-            background-image: url("/icons/mail.svg");
-          }  
-    }
-
-    &:nth-child(3) {
-        .img {
-            height: 50px;
-            width: 50px;
-            background-image: url("/icons/location.svg");
-          }  
-    }
-
-    &:nth-child(4) {
-        .img {
-            height: 50px;
-            width: 50px;
-            background-image: url("/icons/time.svg");
-          }  
-    }
-  }
-}

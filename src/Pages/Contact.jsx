@@ -75,7 +75,7 @@ const Contact = () => {
         <p className="info">
           Informišite se o svemu što Vas zanima ili zakažite susret sa svojim
           terapeutom. Seanse se održavaju u savetovalištu ili online u unapred
-          zakazanim terminima.
+          zakazanim terminima. <span>dr Bojana Todorović</span>
         </p>
         <div className="contact-flex">
           <div className="left">
@@ -91,7 +91,7 @@ const Contact = () => {
             </div>
             <div className="cont-part">
               <div className="img"></div>
-              <p className="contact-p">Kralja Milutina 46</p>
+              <p className="contact-p">Kralja Milutina 46, Beograd</p>
             </div>
             <div className="cont-part">
               <div className="img"></div>

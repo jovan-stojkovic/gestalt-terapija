@@ -127,7 +127,7 @@ const Biography = () => {
           variants={sectionMotion}
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.8, once: true }}
+          viewport={{ amount: 0.4, once: true }}
         >
           <div className="section-cont">
             <div className="left"></div>
