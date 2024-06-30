@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import What from "./Pages/What";
 import Biography from "./Pages/Biography";
 import Contact from "./Pages/Contact";
+import Popular from "./Pages/Popular";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/sta-je-psihoterapija" element={<What />} />
           <Route path="/biografija" element={<Biography />} />
           <Route path="/kontakt" element={<Contact />} />
+          <Route path="/aktuelno" element={<Popular />} />
         </Routes>
         <Footer />
       </main>

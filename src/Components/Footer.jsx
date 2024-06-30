@@ -28,7 +28,7 @@ const Footer = () => {
       transition: {
         duration: 0.1,
         type: "spring",
-        stiffness: 120,
+        stiffness: 100,
       },
     },
   };
@@ -54,14 +54,14 @@ const Footer = () => {
           variants={imgMotion}
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.4, once: true }}
+          viewport={{ amount: 0.4 }}
         ></motion.div>
         <motion.div
           className="right"
           variants={generalMotion}
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.4, once: true }}
+          viewport={{ amount: 0.4 }}
         >
           <motion.h3 variants={pMotion}>Kontaktirajte me:</motion.h3>
           <motion.p variants={pMotion}>+381 63 43 00 95</motion.p>
@@ -69,7 +69,10 @@ const Footer = () => {
             gestalt.terapija.bojana@gmail.com
           </motion.p>
           <motion.div className="insta-link" variants={pMotion}>
-            <Link to="https://www.instagram.com/be_gestalt/?next=https%3A%2F%2Fwww.instagram.com%2Fbe_gestalt%2Fp%2FBoOYKUYntq1%2F%3F__coig_restricted%3D1%26__coig_login%3D1">
+            <Link
+              target="_blank"
+              to="https://www.instagram.com/be_gestalt/?next=https%3A%2F%2Fwww.instagram.com%2Fbe_gestalt%2Fp%2FBoOYKUYntq1%2F%3F__coig_restricted%3D1%26__coig_login%3D1"
+            >
               @instagram
             </Link>
           </motion.div>

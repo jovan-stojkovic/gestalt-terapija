@@ -1,5 +1,4 @@
 import "../Styles/Biography.scss";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Biography = () => {

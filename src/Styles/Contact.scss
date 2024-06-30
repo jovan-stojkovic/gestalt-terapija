@@ -3,6 +3,7 @@
 .page.contact {
   min-height: 100vh;
   margin-top: -50px;
+  margin-bottom: 200px;
 
   .head {
     position: relative;
@@ -70,7 +71,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 30px;
-    
+
       .cont-part {
         display: flex;
         align-items: center;
@@ -79,7 +80,7 @@
         padding: 20px;
         width: 100%;
         gap: 10px;
-    
+
         .img {
           height: 50px;
           width: 50px;
@@ -88,40 +89,38 @@
           background-position: center;
           background-repeat: no-repeat;
         }
-    
+
         .contact-p {
-            font-family: $dosis;
-            font-size: 14px;
-            letter-spacing: 2px;
-            font-weight: 500;
+          font-family: $dosis;
+          font-size: 14px;
+          letter-spacing: 2px;
+          font-weight: 500;
         }
-    
+
         &:nth-child(2) {
-            .img {
-                height: 50px;
-                width: 50px;
-                background-image: url("/icons/mail.svg");
-              }  
+          .img {
+            height: 50px;
+            width: 50px;
+            background-image: url("/icons/mail.svg");
+          }
         }
-    
+
         &:nth-child(3) {
-            .img {
-                height: 50px;
-                width: 50px;
-                background-image: url("/icons/location.svg");
-              }  
+          .img {
+            height: 50px;
+            width: 50px;
+            background-image: url("/icons/location.svg");
+          }
         }
-    
+
         &:nth-child(4) {
-            .img {
-                height: 50px;
-                width: 50px;
-                background-image: url("/icons/time.svg");
-              }  
+          .img {
+            height: 50px;
+            width: 50px;
+            background-image: url("/icons/time.svg");
+          }
         }
       }
     }
   }
 }
-
-
