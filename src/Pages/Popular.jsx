@@ -63,7 +63,7 @@ const Popular = () => {
         </motion.h1>
       </div>
       <div className="page-cont">
-        <p>
+        <p className="page-info">
           Ovde možete pratiti aktuelnosti u okviru pružanja psihoterapijskih
           usluga, informisati se o programima koji su u toku ili postaviti
           pitanje Vašem psihoterapeutu. Ukoliko Vam se neki od sadržaja učini
@@ -76,7 +76,7 @@ const Popular = () => {
             variants={sectionMotionLeft}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.5, once: true }}
+            viewport={{ amount: 0.25, once: true }}
           >
             <div className="img-cont"></div>
             <h1>Terapija online</h1>
@@ -107,7 +107,7 @@ const Popular = () => {
             variants={sectionMotionRight}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.5, once: true }}
+            viewport={{ amount: 0.25, once: true }}
           >
             <div className="img-cont"></div>
             <h1>#Antipanik blog</h1>

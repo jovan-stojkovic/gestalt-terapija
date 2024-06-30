@@ -61,39 +61,6 @@ header {
         }
       }
 
-      .popular-navlink {
-        position: relative;
-
-        .popular {
-          position: absolute;
-          width: max-content;
-          left: -20px;
-          height: 0;
-          overflow: hidden;
-          padding-top: 0px;
-
-          .popular-cont {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 3px;
-            padding: 0 20px;
-          }
-
-          &.show {
-            transition: height 0.5s;
-            height: 150px;
-            padding-top: 20px;
-
-            .popular-cont {
-              padding: 20px 20px;
-            }
-          }
-        }
-      }
-
       .insta-link {
         all: unset;
         height: 16px;

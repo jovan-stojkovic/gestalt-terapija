@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   const [language, setLanguage] = useState("srb");
-  const [showHiddenPopular, setShowHiddenPopular] = useState("hide");
 
   const srbFlag = "/flags/SRB.png";
   const engFlag = "/flags/ENG.png";
@@ -66,25 +65,10 @@ const Header = () => {
               BIOGRAFIJA
             </NavLink>
           </motion.div>
-          <motion.div
-            variants={navlinksMotion}
-            className="popular-navlink"
-            onMouseEnter={() => setShowHiddenPopular("show")}
-            onMouseLeave={() => setShowHiddenPopular("hide")}
-          >
+          <motion.div variants={navlinksMotion}>
             <NavLink className="navlink" to="/aktuelno">
               AKTUELNO
             </NavLink>
-            <div className={`popular ${showHiddenPopular}`}>
-              <div className="popular-cont">
-                <NavLink className="navlink" to="/aktuelno/terapija-online">
-                  TERAPIJA ONLINE
-                </NavLink>
-                <NavLink className="navlink" to="/aktuelno/antipanik-blog">
-                  ANTIPANIK BLOG
-                </NavLink>
-              </div>
-            </div>
           </motion.div>
 
           <motion.div variants={navlinksMotion}>
