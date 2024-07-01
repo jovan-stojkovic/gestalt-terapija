@@ -74,6 +74,7 @@ const What = () => {
           Šta je psihoterapija?
         </motion.h1>
       </div>
+      
       <div className="page-cont">
         <motion.section
           className="one"

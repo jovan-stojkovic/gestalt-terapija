@@ -8,6 +8,7 @@ import Biography from "./Pages/Biography";
 import Contact from "./Pages/Contact";
 import Popular from "./Pages/Popular";
 import BlogOne from "./Blogs/BlogOne";
+import Texts from "./Pages/Texts";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
             path="/aktuelno/antipanik-blog/vanredno-stanje-iz-ugla-psihologa"
             element={<BlogOne />}
           />
+          <Route path="/tekstovi" element={<Texts />} />
         </Routes>
         <Footer />
       </main>
