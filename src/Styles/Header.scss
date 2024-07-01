@@ -20,10 +20,15 @@ header {
     .logo-link {
       height: 40px;
       width: 40px;
+      transition: scale 0.5s;
       img {
         height: 100%;
         width: 100%;
         object-fit: cover;
+      }
+
+      &:hover {
+        scale: 1.05;
       }
     }
 
@@ -61,33 +66,25 @@ header {
         }
       }
 
-      .insta-link {
+      .ext-link {
         all: unset;
         height: 16px;
         width: 16px;
-        background-image: url("/icons/instagram-color.svg");
         background-size: cover;
         cursor: pointer;
         margin-left: 10px;
         filter: grayscale(0.8);
         transition: filter 0.2s;
 
-        &:hover {
-          filter: grayscale(0);
+        &.insta {
+          background-image: url("/icons/instagram-color.svg");
         }
-      }
 
-      .linkedin-link {
-        all: unset;
-        height: 16px;
-        width: 16px;
-        background-image: url("/icons/linkedin.svg");
-        background-size: cover;
-        cursor: pointer;
-        margin-left: 10px;
-        filter: grayscale(0.8);
-        transition: filter 0.2s;
-
+        &.linkedin {
+          background-image: url("/icons/linkedin.svg");
+          height: 17px;
+          width: 17px;
+        }
         &:hover {
           filter: grayscale(0);
         }
