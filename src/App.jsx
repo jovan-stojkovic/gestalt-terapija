@@ -17,16 +17,16 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/sta-je-psihoterapija" element={<What />} />
-          <Route path="/biografija" element={<Biography />} />
-          <Route path="/kontakt" element={<Contact />} />
-          <Route path="/aktuelno" element={<Popular />} />
+          <Route path="sta-je-psihoterapija" element={<What />} />
+          <Route path="biografija" element={<Biography />} />
+          <Route path="kontakt" element={<Contact />} />
+          <Route path="aktuelno" element={<Popular />} />
           //blogs
           <Route
-            path="/aktuelno/antipanik-blog/vanredno-stanje-iz-ugla-psihologa"
+            path="aktuelno/antipanik-blog/vanredno-stanje-iz-ugla-psihologa"
             element={<BlogOne />}
           />
-          <Route path="/tekstovi" element={<Texts />} />
+          <Route path="tekstovi" element={<Texts />} />
         </Routes>
         <Footer />
       </main>
