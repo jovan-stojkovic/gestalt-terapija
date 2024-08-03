@@ -21,7 +21,6 @@ const App = () => {
           <Route path="biografija" element={<Biography />} />
           <Route path="kontakt" element={<Contact />} />
           <Route path="aktuelno" element={<Popular />} />
-          //blogs
           <Route
             path="aktuelno/antipanik-blog/vanredno-stanje-iz-ugla-psihologa"
             element={<BlogOne />}
