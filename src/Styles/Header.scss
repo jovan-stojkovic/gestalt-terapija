@@ -81,8 +81,6 @@ header {
 
           &.linkedin {
             background-image: url("/icons/linkedin.svg");
-            height: 20px;
-            width: 20px;
             content-visibility: hidden;
           }
           &:hover {
@@ -130,16 +128,68 @@ header {
   }
 }
 
-//1440px - 1700px
-@media (max-width: 1700px) {
-}
-
 //1024px - 1440px
 @media (max-width: 1440px) {
+  header {
+    .header-cont {
+      width: 95vw;
+
+      nav {
+        .nav-content {
+          gap: 8px;
+
+          .navlink {
+            padding: 4px 8px;
+          }
+
+          .ext-link {
+            height: 18px;
+            width: 18px;
+          }
+        }
+      }
+    }
+  }
 }
 
 //768px - 1024px
 @media (max-width: 1024px) {
+  header {
+    height: 50px;
+
+    .header-cont {
+      width: 95vw;
+
+      .logo-link {
+        height: 40px;
+        width: 40px;
+      }
+
+      nav {
+        .nav-content {
+          gap: 5px;
+
+          .navlink {
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            padding: 3px 6px;
+          }
+
+          .ext-link {
+            height: 15px;
+            width: 15px;
+            margin-left: 6px;
+          }
+
+          .language-btn {
+            height: 16px;
+            width: 28px;
+            margin-left: 6px;
+          }
+        }
+      }
+    }
+  }
 }
 
 //470px - 768px
@@ -204,6 +254,7 @@ header {
             letter-spacing: 2px;
             transition: color 0.5s;
             font-size: 13px;
+
             &.insta {
               margin-top: 300px;
               background-image: none;
@@ -248,9 +299,9 @@ header {
             }
           }
         }
-      &.show {
-        height: 100vh;
-      }
+        &.show {
+          height: 100vh;
+        }
       }
 
       .menu-btn {
@@ -278,4 +329,53 @@ header {
 
 //<<<<<<<<470px
 @media (max-width: 470px) {
+  header {
+    height: 40px;
+
+    .header-cont {
+      width: 95vw;
+
+      .logo-link {
+        height: 35px;
+        width: 35px;
+      }
+
+      nav {
+        .dark-part {
+          width: 50vw;
+        }
+
+        .nav-content {
+          gap: 15px;
+          width: 50vw;
+          padding-top: 40px;
+
+          .navlink {
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            padding: 4px 8px;
+          }
+
+          .ext-link {
+            font-size: 11px;
+            letter-spacing: 1px;
+          }
+
+          .language-btn {
+            p {
+              font-size: 11px;
+              letter-spacing: 1px;
+            }
+          }
+        }
+        &.show {
+          height: 100vh;
+        }
+      }
+      .menu-btn {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
 }
