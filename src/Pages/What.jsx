@@ -74,9 +74,9 @@ const What = () => {
           Šta je psihoterapija?
         </motion.h1>
       </div>
-      
+
       <div className="page-cont">
-        <motion.section
+        <motion.div
           className="one"
           variants={generalMotion}
           initial="hidden"
@@ -111,10 +111,10 @@ const What = () => {
             svakom klijentu je individualan, zato ne postoji planiran tok
             terapije, već ga zajedno stvaraju klijent i terapeut.
           </motion.p>
-        </motion.section>
+        </motion.div>
 
         <motion.section
-          className="two"
+          className="one"
           variants={sectionMotion}
           initial="hidden"
           whileInView="visible"
@@ -166,7 +166,7 @@ const What = () => {
         </motion.section>
 
         <motion.section
-          className="three"
+          className="two"
           variants={sectionMotion}
           initial="hidden"
           whileInView="visible"
@@ -226,7 +226,7 @@ const What = () => {
         </motion.section>
 
         <motion.section
-          className="four"
+          className="three"
           variants={sectionMotion}
           initial="hidden"
           whileInView="visible"
@@ -244,7 +244,7 @@ const What = () => {
                 uzbudljiv put. Put koji mi je pomogao da duboko skrivene obrasce
                 ponašanja, mehanizme odbrane i emocije osvestim i postanem
                 spremnija, jača, sigurnija i borbenija za nove početke i
-                saznanja" - Jovana, 23 godine
+                saznanja" <span>Jovana, 23 godine</span>
               </p>
 
               <p>
@@ -253,7 +253,7 @@ const What = () => {
                 uvek sam bila sigurna da sam u terapiji na putu ka nečem što je
                 mnogo bolje od onoga što sam do tada imala. Uspela sam da
                 ostvarim svoj početni cilj, ne samo jedan već i više njih.
-                Terapija je bila divno iskustvo." - Sandra, 32 godine
+                Terapija je bila divno iskustvo." <span>Sandra, 32 godine</span>
               </p>
 
               <p>
@@ -266,7 +266,7 @@ const What = () => {
                 allowed her to work very well with her U.S. clients. Since she
                 was working in a remote environment, it was very helpful to us
                 that she was always prompt to answer and present when
-                necessary." - Andrew Sachs, CEO @ Nobel Coaching
+                necessary." <span>Andrew Sachs, CEO @ Nobel Coaching</span>
               </p>
             </div>
           </div>
