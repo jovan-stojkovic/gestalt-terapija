@@ -3,12 +3,16 @@
 .page.contact {
   .head {
     background-image: url("/animation/12.jpg");
-    background-size: 550px;
-
+    background-size: 35%;
     background-repeat: no-repeat;
   }
 
   .page-cont {
+    p {
+      font-size: 22px;
+      line-height: 34px;
+      margin-bottom: 50px;
+    }
     .contact-flex {
       @include flex($justify: space-between);
       gap: 20px;
@@ -18,7 +22,7 @@
       background-image: url("/bojana/circle.png");
       height: 400px;
       width: 400px;
-      background-size: contain;
+      @include background();
     }
 
     .right {
@@ -44,6 +48,7 @@
         .contact-p {
           font-size: 22px;
           font-weight: 500;
+          text-align: center;
         }
 
         &:nth-child(2) {
@@ -70,20 +75,142 @@
 
 //1440px - 1700px
 @media (max-width: 1700px) {
+  .page.contact {
+    .head {
+      background-size: 45%;
+    }
+
+    .page-cont {
+      .left {
+        height: 400px;
+        width: 400px;
+      }
+
+      .right {
+        .cont-part {
+          padding: 10px;
+          gap: 5px;
+
+          .img {
+            height: 50px;
+            width: 50px;
+          }
+
+          .contact-p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
 }
 
 //1024px - 1440px
 @media (max-width: 1440px) {
+  .page.contact {
+    .head {
+      background-size: 60%;
+    }
+
+    .page-cont {
+      p {
+        font-size: 19px;
+        line-height: 30px;
+      }
+
+      .left {
+        height: 300px;
+        width: 300px;
+      }
+
+      .right {
+        .cont-part {
+          .contact-p {
+            font-size: 16px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 }
 
 //768px - 1024px
 @media (max-width: 1024px) {
+  .page.contact {
+    .page-cont {
+      p {
+        font-size: 17px;
+        line-height: 29px;
+        margin-bottom: 40px;
+      }
+
+      .right {
+        gap: 10px;
+
+        .cont-part {
+          .img {
+            height: 40px;
+            width: 40px;
+            background-size: 30px;
+          }
+        }
+      }
+    }
+  }
 }
 
 //470px - 768px
 @media (max-width: 768px) {
+  .page.contact {
+    .head {
+      background-size: 70%;
+    }
+
+    .page-cont {
+      p {
+        font-size: 16px;
+        line-height: 26px;
+      }
+      .contact-flex {
+        gap: 10px;
+      }
+
+      .left {
+        height: 300px;
+        width: 300px;
+      }
+
+      .right {
+        @include flex($direction: column);
+        gap: 0px;
+
+        .cont-part {
+          padding: 0px;
+          gap: 0px;
+        }
+      }
+    }
+  }
 }
 
 //<<<<<<<<470px
 @media (max-width: 470px) {
+  .page.contact {
+    .head {
+      background-size: 100%;
+    }
+
+    .page-cont {
+      .contact-flex {
+        gap: 50px;
+        flex-direction: column;
+      }
+
+      .left {
+        height: 250px;
+        width: 250px;
+      }
+    }
+  }
 }
