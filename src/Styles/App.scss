@@ -13,30 +13,6 @@ $sarabun: "Sarabun", sans-serif;
 $shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
   rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
-@mixin paragraph {
-  color: $black;
-  font-size: $p-size;
-  line-height: $p-height;
-  letter-spacing: $p-spacing;
-  text-align: justify;
-}
-
-@mixin headline1 {
-  color: $black;
-  font-size: $h1-size;
-  letter-spacing: $h1-spacing;
-  margin-bottom: 20px;
-  font-weight: 500;
-}
-
-@mixin headline2 {
-  color: $black;
-  font-size: $h2-size;
-  letter-spacing: $h2-spacing;
-  margin-bottom: 20px;
-  font-weight: 500;
-}
-
 @mixin flex($align: center, $justify: center, $direction: row) {
   display: flex;
   align-items: $align;
@@ -144,20 +120,139 @@ main {
 
 //1440px - 1700px
 @media (max-width: 1700px) {
+  main {
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .page {
+    .head {
+      height: 550px;
+
+      .headline {
+        font-size: 45px;
+        margin-top: 350px;
+      }
+    }
+
+    .page-cont {
+      padding: 40px 0;
+      width: 1200px;
+    }
+  }
 }
 
 //1024px - 1440px
 @media (max-width: 1440px) {
+  .page {
+    .head {
+      max-width: 1500px;
+
+      .headline {
+        font-size: 40px;
+      }
+    }
+
+    .page-cont {
+      padding: 40px 0;
+      width: 1000px;
+    }
+  }
 }
 
 //768px - 1024px
 @media (max-width: 1024px) {
+  main {
+    p {
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 22px;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  .page {
+    .head {
+      height: 500px;
+      max-width: 1200px;
+
+      .headline {
+        font-size: 35px;
+        margin-top: 300px;
+        padding: 8px 20px;
+      }
+    }
+
+    .page-cont {
+      padding: 30px 0;
+      width: 95vw;
+    }
+  }
 }
 
 //470px - 768px
 @media (max-width: 768px) {
+  main {
+    p {
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      line-height: 20px;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 18px;
+      letter-spacing: 3px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+  .page {
+    .head {
+      height: 400px;
+
+      .headline {
+        font-size: 30px;
+        letter-spacing: 6px;
+        margin-top: 250px;
+      }
+    }
+
+    .page-cont {
+      padding: 20px 0;
+      width: 95vw;
+    }
+  }
 }
 
 //<<<<<<<<470px
 @media (max-width: 470px) {
+  main {
+    p {
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 18px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .page {
+    .page-cont {
+      width: 95vw;
+    }
+  }
 }

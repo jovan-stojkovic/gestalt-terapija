@@ -3,7 +3,7 @@ import { useState } from "react";
 import "../Styles/Header.scss";
 import { motion } from "framer-motion";
 
-const Header = ({ showMenu, setShowMenu, toggleMenu}) => {
+const Header = ({ showMenu, setShowMenu, toggleMenu }) => {
   const [language, setLanguage] = useState("srb");
 
   const srbFlag = "/flags/SRB.png";
@@ -47,8 +47,18 @@ const Header = ({ showMenu, setShowMenu, toggleMenu}) => {
         <Link className="logo-link" to="/">
           <img src="/icons/logo.svg" alt="logo" className="logo" />
         </Link>
-        <motion.nav variants={generalMotion} initial="hidden" animate="visible" className={showMenu}>
-          <div className="dark-part"></div>
+        <motion.nav
+          variants={generalMotion}
+          initial="hidden"
+          animate="visible"
+          className={showMenu}
+        >
+          <div
+            className="dark-part"
+            onClick={() => {
+              setShowMenu("");
+            }}
+          ></div>
           <div className="nav-content">
             <motion.div variants={navlinksMotion}>
               <NavLink className="navlink" to="/">
@@ -57,31 +67,61 @@ const Header = ({ showMenu, setShowMenu, toggleMenu}) => {
             </motion.div>
 
             <motion.div variants={navlinksMotion}>
-              <NavLink className="navlink" to="/sta-je-psihoterapija">
+              <NavLink
+                className="navlink"
+                to="/sta-je-psihoterapija"
+                onClick={() => {
+                  setShowMenu("");
+                }}
+              >
                 ŠTA JE PSIHOTERAPIJA?
               </NavLink>
             </motion.div>
 
             <motion.div variants={navlinksMotion}>
-              <NavLink className="navlink" to="/aktuelno">
+              <NavLink
+                className="navlink"
+                to="/aktuelno"
+                onClick={() => {
+                  setShowMenu("");
+                }}
+              >
                 AKTUELNO
               </NavLink>
             </motion.div>
 
             <motion.div variants={navlinksMotion}>
-              <NavLink className="navlink" to="/tekstovi">
+              <NavLink
+                className="navlink"
+                to="/tekstovi"
+                onClick={() => {
+                  setShowMenu("");
+                }}
+              >
                 TEKSTOVI
               </NavLink>
             </motion.div>
 
             <motion.div variants={navlinksMotion}>
-              <NavLink className="navlink" to="/biografija">
+              <NavLink
+                className="navlink"
+                to="/biografija"
+                onClick={() => {
+                  setShowMenu("");
+                }}
+              >
                 BIOGRAFIJA
               </NavLink>
             </motion.div>
 
             <motion.div variants={navlinksMotion}>
-              <NavLink className="navlink" to="/kontakt">
+              <NavLink
+                className="navlink"
+                to="/kontakt"
+                onClick={() => {
+                  setShowMenu("");
+                }}
+              >
                 KONTAKT
               </NavLink>
             </motion.div>
