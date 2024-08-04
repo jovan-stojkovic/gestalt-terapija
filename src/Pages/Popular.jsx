@@ -79,7 +79,7 @@ const Popular = () => {
             viewport={{ amount: 0.25, once: true }}
           >
             <div className="img-cont"></div>
-            <h1>Terapija online</h1>
+            <h3>Terapija online</h3>
             <p>
               Zahvaljujući novim tehnologijama danas je moguće učestvovati u
               terapijskoj seansi i bez fizičkog dolaska na terapiju. Na
@@ -110,7 +110,7 @@ const Popular = () => {
             viewport={{ amount: 0.25, once: true }}
           >
             <div className="img-cont"></div>
-            <h1>#Antipanik blog</h1>
+            <h3>#Antipanik blog</h3>
 
             <p>
               U davnim danima kada je bilo kakav scenario sličan današnjem bio
