@@ -35,7 +35,7 @@ const What = () => {
   const sectionMotion = {
     hidden: {
       opacity: 0,
-      x: -300,
+      x: -50,
     },
     visible: {
       opacity: 1,
@@ -170,7 +170,7 @@ const What = () => {
           variants={sectionMotion}
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.8, once: true }}
+          viewport={{ amount: 0.3, once: true }}
         >
           <h2>Kada na psihoterapiju?</h2>
           <p>
@@ -230,7 +230,7 @@ const What = () => {
           variants={sectionMotion}
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.8, once: true }}
+          viewport={{ amount: 0.3, once: true }}
         >
           <h2>Utisci klijenata</h2>
           <div className="section-cont">

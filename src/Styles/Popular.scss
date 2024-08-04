@@ -48,6 +48,8 @@
 
         .blog-link {
           font-size: 18px;
+          font-family: $dosis;
+
           a {
             color: $chocolate-brown;
             font-weight: 300;
@@ -135,17 +137,14 @@
 //<<<<<<<<470px
 @media (max-width: 470px) {
   .page.popular {
-
     .page-cont {
       .page-info {
         font-size: 16px;
         line-height: 27px;
       }
       .section-flex {
-
         section {
           padding: 15px;
-
 
           .blog-link {
             font-size: 14px;

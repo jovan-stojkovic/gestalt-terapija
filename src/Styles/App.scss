@@ -87,6 +87,7 @@ main {
       border-radius: 3px;
       background-color: rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(4px);
+      text-align: center;
     }
   }
 
@@ -250,6 +251,15 @@ main {
   }
 
   .page {
+    .head {
+      height: 400px;
+
+      .headline {
+        font-size: 20px;
+        letter-spacing: 4px;
+        margin-top: 250px;
+      }
+    }
     .page-cont {
       width: 95vw;
     }

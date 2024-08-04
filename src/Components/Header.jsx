@@ -61,7 +61,13 @@ const Header = ({ showMenu, setShowMenu, toggleMenu }) => {
           ></div>
           <div className="nav-content">
             <motion.div variants={navlinksMotion}>
-              <NavLink className="navlink" to="/">
+              <NavLink
+                className="navlink"
+                to="/"
+                onClick={() => {
+                  setShowMenu("");
+                }}
+              >
                 POČETNA
               </NavLink>
             </motion.div>

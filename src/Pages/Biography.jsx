@@ -34,7 +34,7 @@ const Biography = () => {
   const sectionMotion = {
     hidden: {
       opacity: 0,
-      x: -300,
+      x: -100,
     },
     visible: {
       opacity: 1,
@@ -126,7 +126,7 @@ const Biography = () => {
           variants={sectionMotion}
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.4, once: true }}
+          viewport={{ amount: 0.3, once: true }}
         >
           <div className="section-cont">
             <div className="left"></div>
