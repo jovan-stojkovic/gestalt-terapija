@@ -75,3 +75,183 @@
     }
   }
 }
+
+//1024px - 1440px
+@media (max-width: 1440px) {
+  .page.what {
+    .page-cont {
+      section {
+        padding: 20px;
+        margin: 40px 0;
+      }
+
+      section.one {
+        .section-cont {
+          @include flex($justify: space-between);
+          gap: 40px;
+          .left {
+            width: 60%;
+          }
+          .right {
+            width: 40%;
+            height: 500px;
+          }
+        }
+      }
+
+      section.two {
+        margin-left: 5%;
+
+        ul {
+          margin: 25px 0 25px 25px;
+        }
+      }
+
+      section.three {
+        .section-cont {
+          gap: 40px;
+
+          .left {
+            width: 40%;
+            height: 350px;
+          }
+
+          .right {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+
+//768px - 1024px
+@media (max-width: 1024px) {
+  .page.what {
+    .page-cont {
+      section.one {
+        .section-cont {
+          .right {
+            height: 400px;
+          }
+        }
+      }
+
+      section.two {
+        ul {
+          margin: 20px 0 20px 20px;
+          li {
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            line-height: 22px;
+          }
+        }
+      }
+
+      section.three {
+        .section-cont {
+          .left {
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//470px - 768px
+@media (max-width: 768px) {
+  .page.what {
+    .page-cont {
+      section {
+        padding: 15px;
+        margin: 40px 0;
+        width: 96%;
+      }
+
+      section.one {
+        .section-cont {
+          @include flex($justify: space-between, $direction: column);
+          gap: 20px;
+          .left {
+            width: 100%;
+          }
+          .right {
+            width: 100%;
+            height: 300px;
+          }
+        }
+      }
+
+      section.two {
+        margin-left: 2%;
+
+        ul {
+          li {
+            font-size: 13px;
+            line-height: 20px;
+            margin-bottom: 6px;
+          }
+        }
+      }
+
+      section.three {
+        margin-left: 4%;
+        .section-cont {
+          @include flex($justify: space-between, $direction: column-reverse);
+          gap: 20px;
+
+          .left {
+            width: 100%;
+            height: 300px;
+          }
+
+          .right {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+//<<<<<<<<470px
+@media (max-width: 470px) {
+  .page.what {
+    .page-cont {
+      section {
+        padding: 10px;
+        margin: 30px 0;
+      }
+  
+      section.one {
+        .section-cont {
+          .right {
+            height: 200px;
+          }
+        }
+      }
+  
+      section.two {
+        ul {
+          margin: 10px 0 10px 10px;
+          li {
+            font-size: 11px;
+            letter-spacing: 1px;
+            line-height: 18px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+  
+      section.three {
+        .section-cont {
+          .left {
+            height: 220px;
+            background-position: bottom;
+          }
+        }
+      }
+    }
+  }
+}

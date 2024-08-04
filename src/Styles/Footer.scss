@@ -5,6 +5,7 @@ footer {
   height: 150px;
   box-shadow: $shadow;
   background-color: $beige-gold;
+  overflow-x: hidden;
 
   .footer-cont {
     width: 1200px;
