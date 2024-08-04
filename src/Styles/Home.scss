@@ -9,7 +9,13 @@
     section.one {
       @include flex($justify: space-between);
       margin-bottom: 50px;
-
+      .left {
+        width: 80%;
+        p {
+          font-size: 22px;
+          line-height: 30px;
+        }
+      }
       .right {
         width: 500px;
         height: 500px;
@@ -27,6 +33,123 @@
         @include background($size: cover);
         border-radius: 5px;
         box-shadow: $shadow;
+      }
+    }
+  }
+}
+
+//1440px - 1700px
+@media (max-width: 1700px) {
+  .page.home {
+    .page-cont {
+      section.one {
+        margin-bottom: 20px;
+        .left {
+          p {
+            font-size: 20px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//1024px - 1440px
+@media (max-width: 1440px) {
+  .page.home {
+    .page-cont {
+      section.one {
+        margin-bottom: 10px;
+        .left {
+          p {
+            font-size: 18px;
+            line-height: 26px;
+          }
+        }
+        .right {
+          width: 450px;
+          height: 450px;
+        }
+      }
+
+      section.two {
+        .img-cont {
+          margin-top: 30px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
+//768px - 1024px
+@media (max-width: 1024px) {
+  .page.home {
+    .page-cont {
+      section.one {
+        margin-bottom: 5px;
+        .left {
+          p {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+        .right {
+          width: 400px;
+          height: 400px;
+        }
+      }
+
+      section.two {
+        .img-cont {
+          margin-top: 20px;
+          height: 250px;
+        }
+      }
+    }
+  }
+}
+
+//470px - 768px
+@media (max-width: 768px) {
+  .page.home {
+    .page-cont {
+      section.one {
+        @include flex($justify: center, $direction: column);
+        .left {
+          width: 100%;
+        }
+        .right {
+          width: 300px;
+          height: 400px;
+        }
+      }
+
+      section.two {
+        .img-cont {
+          margin-top: 20px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+//<<<<<<<<470px
+@media (max-width: 470px) {
+  .page.home {
+    .page-cont {
+      section.one {
+        .left {
+          p {
+            font-size: 15px;
+          }
+        }
+        .right {
+          width: 280px;
+          height: 350px;
+        }
       }
     }
   }
