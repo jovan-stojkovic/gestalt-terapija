@@ -6,6 +6,11 @@
   }
 
   .page-cont {
+    .page-info {
+      font-size: 22px;
+      line-height: 32px;
+      margin-bottom: 50px;
+    }
     .section-flex {
       display: flex;
       gap: 30px;
@@ -47,6 +52,104 @@
             color: $chocolate-brown;
             font-weight: 300;
             margin-bottom: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//1024px - 1440px
+@media (max-width: 1440px) {
+  .page.popular {
+    .page-cont {
+      .page-info {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 40px;
+      }
+      .section-flex {
+        gap: 25px;
+
+        section {
+          padding: 20px;
+
+          .img-cont {
+            height: 250px;
+          }
+
+          .blog-link {
+            font-size: 16px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//768px - 1024px
+@media (max-width: 1024px) {
+  .page.popular {
+    .page-cont {
+      .page-info {
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 30px;
+      }
+      .section-flex {
+        gap: 15px;
+
+        section {
+          padding: 15px;
+
+          .blog-link {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//470px - 768px
+@media (max-width: 768px) {
+  .page.popular {
+    .page-cont {
+      .page-info {
+        font-size: 17px;
+        line-height: 28px;
+      }
+      .section-flex {
+        flex-direction: column;
+        gap: 50px;
+
+        section {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+
+//<<<<<<<<470px
+@media (max-width: 470px) {
+  .page.popular {
+
+    .page-cont {
+      .page-info {
+        font-size: 16px;
+        line-height: 27px;
+      }
+      .section-flex {
+
+        section {
+          padding: 15px;
+
+
+          .blog-link {
+            font-size: 14px;
+            letter-spacing: 0.5px;
           }
         }
       }
