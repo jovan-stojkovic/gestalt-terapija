@@ -54,3 +54,117 @@ footer {
     }
   }
 }
+
+//1440px - 1700px
+@media (max-width: 1700px) {
+  footer {
+    .footer-cont {
+      .right {
+        p {
+          font-size: 17px;
+        }
+        span {
+          font-weight: 600;
+          font-size: 20px;
+        }
+
+        a {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+//1024px - 1440px
+@media (max-width: 1440px) {
+  footer {
+    height: 130px;
+
+    .footer-cont {
+      width: 95vw;
+
+      .left {
+        height: 90%;
+      }
+
+      .right {
+        gap: 3px;
+
+        p {
+          font-size: 16px;
+          letter-spacing: 1.5px;
+        }
+
+        span {
+          font-weight: 600;
+          font-size: 18px;
+        }
+
+        a {
+          font-size: 16px;
+          letter-spacing: 1.5px;
+        }
+      }
+    }
+  }
+}
+
+//768px - 1024px
+@media (max-width: 1024px) {
+  footer {
+    .footer-cont {
+      .right {
+        p {
+          font-size: 14px;
+          letter-spacing: 1px;
+        }
+
+        a {
+          font-size: 14px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+
+//470px - 768px
+@media (max-width: 768px) {
+  footer {
+    height: 200px;
+
+    .footer-cont {
+      .right {
+        span {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+//<<<<<<<<470px
+@media (max-width: 470px) {
+  footer {
+    height: 170px;
+
+    .footer-cont {
+      height: 100%;
+      @include flex($direction: column);
+      gap: 5px;
+
+      .right {
+        @include flex($direction: column, $align: center);
+        gap: 2px;
+
+        span {
+          font-size: 16px;
+        }
+        a {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
