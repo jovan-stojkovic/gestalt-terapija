@@ -1,5 +1,6 @@
-import { Routes, Route } from "react-router-dom";
 import "./Styles/App.scss";
+import { Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
@@ -11,10 +12,28 @@ import BlogOne from "./Blogs/BlogOne";
 import Texts from "./Pages/Texts";
 
 const App = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
+  useEffect(() => {
+    if (showMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [showMenu]);
+
   return (
     <>
       <main>
-        <Header />
+        <Header
+          showMenu={showMenu}
+          setShowMenu={setShowMenu}
+          toggleMenu={toggleMenu}
+        />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="sta-je-psihoterapija" element={<What />} />

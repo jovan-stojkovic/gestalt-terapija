@@ -32,74 +32,250 @@ header {
     }
 
     nav {
-      @include flex($justify: space-between);
-      gap: 10px;
+      .nav-content {
+        @include flex($justify: space-between);
+        gap: 10px;
 
-      .navlink {
-        text-decoration: none;
-        font-size: 14px;
-        letter-spacing: 2px;
-        color: $chocolate-brown;
-        font-weight: 600;
-        padding: 5px 10px;
-        transition: background-color 0.2s, color 0.2s;
-        border-radius: 2px;
-        background-image: linear-gradient(
-          to right,
-          transparent 50%,
-          $beige-gold 50%
-        );
-        background-size: 200% 100%;
-        transition: background-position 0.2s ease;
+        .navlink {
+          text-decoration: none;
+          font-size: 14px;
+          letter-spacing: 2px;
+          color: $chocolate-brown;
+          font-weight: 600;
+          padding: 5px 10px;
+          transition: background-color 0.2s, color 0.2s;
+          border-radius: 2px;
+          background-image: linear-gradient(
+            to right,
+            transparent 50%,
+            $beige-gold 50%
+          );
+          background-size: 200% 100%;
+          transition: background-position 0.2s ease;
 
-        &:hover {
-          color: black;
-          background-position: -100% 0;
+          &:hover {
+            color: black;
+            background-position: -100% 0;
+          }
+
+          &.active {
+            background-color: $chocolate-brown;
+            color: white;
+          }
         }
 
-        &.active {
-          background-color: $chocolate-brown;
-          color: white;
-        }
-      }
-
-      .ext-link {
-        all: unset;
-        height: 20px;
-        width: 20px;
-        background-size: cover;
-        cursor: pointer;
-        margin-left: 10px;
-        filter: grayscale(0.8);
-        transition: filter 0.2s;
-
-        &.insta {
-          background-image: url("/icons/instagram-color.svg");
-        }
-
-        &.linkedin {
-          background-image: url("/icons/linkedin.svg");
+        .ext-link {
+          all: unset;
           height: 20px;
           width: 20px;
+          background-size: cover;
+          cursor: pointer;
+          margin-left: 10px;
+          filter: grayscale(0.8);
+          transition: filter 0.2s;
+
+          &.insta {
+            background-image: url("/icons/instagram-color.svg");
+            content-visibility: hidden;
+          }
+
+          &.linkedin {
+            background-image: url("/icons/linkedin.svg");
+            height: 20px;
+            width: 20px;
+            content-visibility: hidden;
+          }
+          &:hover {
+            filter: grayscale(0);
+          }
         }
-        &:hover {
-          filter: grayscale(0);
+
+        .language-btn {
+          all: unset;
+          cursor: pointer;
+          height: 20px;
+          width: 30px;
+          margin-left: 10px;
+
+          p {
+            content-visibility: hidden;
+          }
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+          }
         }
       }
+    }
+    .menu-btn {
+      all: unset;
+      @include background();
+      background-image: url("/icons/menu.svg");
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: none;
 
-      .language-btn {
+      &:hover {
+        scale: 1.05;
+      }
+
+      &.show {
+        background-image: url("/icons/close-menu.svg");
+      }
+    }
+  }
+}
+
+//1440px - 1700px
+@media (max-width: 1700px) {
+}
+
+//1024px - 1440px
+@media (max-width: 1440px) {
+}
+
+//768px - 1024px
+@media (max-width: 1024px) {
+}
+
+//470px - 768px
+@media (max-width: 768px) {
+  header {
+    height: 50px;
+
+    .header-cont {
+      width: 100%;
+      padding: 0 5px;
+
+      .logo-link {
+        height: 40px;
+        width: 40px;
+        z-index: 1001;
+      }
+
+      nav {
+        position: absolute;
+        display: flex;
+        height: 0;
+        overflow: hidden;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        transition: height 0.2s ease-in;
+
+        .dark-part {
+          height: 100vh;
+          width: 60vw;
+          background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-content {
+          @include flex($justify: start, $direction: column, $align: start);
+          gap: 20px;
+          background-color: rgba(96, 108, 56, 0.9);
+          width: 40vw;
+          padding-top: 50px;
+          padding-left: 10px;
+
+          .navlink {
+            color: black;
+            font-weight: 500;
+            background-image: linear-gradient(
+              to right,
+              transparent 50%,
+              $olive-green 50%
+            );
+            &.active {
+              background-color: $olive-green;
+            }
+          }
+
+          .ext-link {
+            height: auto;
+            width: auto;
+            cursor: pointer;
+            margin-left: 10px;
+            filter: grayscale(0);
+            transition: filter 0.2s;
+            letter-spacing: 2px;
+            transition: color 0.5s;
+            font-size: 13px;
+            &.insta {
+              margin-top: 300px;
+              background-image: none;
+              content-visibility: visible;
+            }
+
+            &.linkedin {
+              background-image: none;
+              height: auto;
+              width: auto;
+              content-visibility: visible;
+            }
+
+            &:hover {
+              color: white;
+            }
+          }
+
+          .language-btn {
+            all: unset;
+            cursor: pointer;
+            height: auto;
+            width: auto;
+            margin-left: 10px;
+
+            p {
+              content-visibility: visible;
+              font-size: 13px;
+              color: black;
+              font-weight: 500;
+              transition: color 0.5s;
+            }
+
+            img {
+              display: none;
+            }
+
+            &:hover {
+              p {
+                color: white;
+              }
+            }
+          }
+        }
+      &.show {
+        height: 100vh;
+      }
+      }
+
+      .menu-btn {
         all: unset;
+        @include background();
+        background-image: url("/icons/menu.svg");
+        height: 25px;
+        width: 25px;
         cursor: pointer;
-        height: 20px;
-        width: 30px;
-        margin-left: 10px;
+        transition: all 0.2s;
+        display: block;
+        z-index: 1001;
 
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: contain;
+        &:hover {
+          scale: 1.05;
+        }
+
+        &.show {
+          background-image: url("/icons/close-menu.svg");
         }
       }
     }
   }
+}
+
+//<<<<<<<<470px
+@media (max-width: 470px) {
 }
