@@ -60,7 +60,6 @@ main {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
 
   p {
     font-family: $dosis;
@@ -91,16 +90,14 @@ main {
 }
 
 .page {
-  min-height: 100vh;
-  margin-bottom: 200px;
-
   .head {
     position: relative;
     height: 600px;
-    width: 100%;
+    max-width: 2000px;
     @include flex();
     box-shadow: $shadow;
     background-position: center;
+    background-size: cover;
 
     .headline {
       font-family: $dosis;

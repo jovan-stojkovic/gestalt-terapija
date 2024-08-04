@@ -63,7 +63,9 @@ const Footer = () => {
           whileInView="visible"
           viewport={{ amount: 0.4 }}
         >
-          <motion.h3 variants={pMotion}>Kontaktirajte me:</motion.h3>
+          <motion.p variants={pMotion}>
+            <span>Kontaktirajte me:</span>
+          </motion.p>
           <motion.p variants={pMotion}>+381 63 43 00 95</motion.p>
           <motion.p variants={pMotion}>
             gestalt.terapija.bojana@gmail.com

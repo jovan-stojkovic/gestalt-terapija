@@ -1,26 +1,25 @@
 @import "./App.scss";
 
 header {
-  height: 50px;
+  height: 60px;
   font-family: $sarabun;
   background-color: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
   z-index: 100;
   position: absolute;
   width: 100%;
 
   .header-cont {
     margin: 0 auto;
-    width: 1000px;
+    width: 1200px;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex($justify: space-between);
 
     .logo-link {
-      height: 40px;
-      width: 40px;
+      height: 50px;
+      width: 50px;
       transition: scale 0.5s;
+
       img {
         height: 100%;
         width: 100%;
@@ -33,14 +32,12 @@ header {
     }
 
     nav {
-      display: flex;
+      @include flex($justify: space-between);
       gap: 10px;
-      align-items: center;
-      justify-content: space-between;
 
       .navlink {
         text-decoration: none;
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: 2px;
         color: $chocolate-brown;
         font-weight: 600;
@@ -68,8 +65,8 @@ header {
 
       .ext-link {
         all: unset;
-        height: 16px;
-        width: 16px;
+        height: 20px;
+        width: 20px;
         background-size: cover;
         cursor: pointer;
         margin-left: 10px;
@@ -82,8 +79,8 @@ header {
 
         &.linkedin {
           background-image: url("/icons/linkedin.svg");
-          height: 17px;
-          width: 17px;
+          height: 20px;
+          width: 20px;
         }
         &:hover {
           filter: grayscale(0);
